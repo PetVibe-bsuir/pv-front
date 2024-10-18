@@ -1,5 +1,4 @@
-
-
+import AchivmentsCard from "@/components/Achivments/AchivmentsCard.tsx";
 
 const AchivmentsList = () => {
     return (
