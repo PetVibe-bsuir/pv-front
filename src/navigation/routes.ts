@@ -1,5 +1,5 @@
 import type { ComponentType, JSX } from "react";
-import { EventPage, GamesPage, HomePage } from "@/pages";
+import { EventPage, GamesPage, HomePage, SkinsPage } from "@/pages";
 
 interface Route {
     path: string;
@@ -9,7 +9,8 @@ interface Route {
 }
 
 export const routes: Route[] = [
-    { path: "/", Component: HomePage },
-    { path: "/games", Component: GamesPage, title: "Init Data" },
-    { path: "/event", Component: EventPage, title: "Theme Params" },
+    { path: "/", Component: HomePage, title: "Home" },
+    { path: "/games", Component: GamesPage, title: "Games" },
+    { path: "/event", Component: EventPage, title: "Events" },
+    { path: "/skins", Component: SkinsPage, title: "Skins" },
 ];

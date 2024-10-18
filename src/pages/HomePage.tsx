@@ -1,18 +1,22 @@
-import Stats from "@/components/ui/states";
+import States from "@/components/States";
+import { Link } from "react-router-dom";
 
 const Page = () => {
     return (
         <>
-            <Stats />
+            <States />
             <div className="flex w-full flex-1 items-center justify-center">
                 <div className="flex flex-col">
                     <img
                         className="h-[50vw] w-[50vw]"
                         src="https://utfs.io/f/bkysktwhKky7zZkMcMoyOVoQAJU8haN1zf03sc2ukPFIK9xL"
                     ></img>
-                    <button className="mt-2 text-xl text-amber-500 active:text-amber-600">
+                    <Link
+                        to="/skins"
+                        className="mt-2 text-center text-xl text-amber-500 active:text-amber-600"
+                    >
                         Изменить
-                    </button>
+                    </Link>
                 </div>
             </div>
         </>
