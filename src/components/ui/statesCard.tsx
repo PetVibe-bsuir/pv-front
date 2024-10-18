@@ -1,7 +1,8 @@
+
 interface StatestProps {
     indicator: number;
     color: string;
-    lucideImg: JSX.Element;
+    lucideImg: React.ReactNode;
 }
 
 const StatesCard = ({ indicator, color, lucideImg }: StatestProps) => {
