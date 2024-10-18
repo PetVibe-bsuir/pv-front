@@ -10,7 +10,6 @@ const Layout: FC = () => {
     return (
         <div className="flex min-h-screen flex-col bg-black text-white">
             <div className="flex flex-1">
-                {/* {props.children} */}
                 <Outlet />
             </div>
             {nav}
