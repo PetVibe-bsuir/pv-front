@@ -1,4 +1,4 @@
-import States from "@/components/states.tsx";
+import States from "@/components/States.tsx";
 
 const Page = () => {
     return (

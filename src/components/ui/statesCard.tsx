@@ -1,8 +1,9 @@
+import type { ReactNode } from "react";
 
 interface StatestProps {
     indicator: number;
     color: string;
-    lucideImg: React.ReactNode;
+    lucideImg: ReactNode;
 }
 
 const StatesCard = ({ indicator, color, lucideImg }: StatestProps) => {
