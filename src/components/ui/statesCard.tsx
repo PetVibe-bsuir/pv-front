@@ -1,16 +1,16 @@
 interface StatestProps {
     indicator: number;
-    title: string;
     color: string;
+    lucideImg: JSX.Element;
 }
 
-const StatesCard = ({ indicator, title, color }: StatestProps) => {
-    // Ограничим индикатор в диапазоне от 0 до 100
+const StatesCard = ({ indicator, color, lucideImg }: StatestProps) => {
     const clampedIndicator = Math.max(0, Math.min(indicator, 100));
 
     return (
-        <div className="flex items-center rounded-lg p-4 w-full">
+        <div className="flex justify-between items-center rounded-lg p-4 w-full">
             <div className={`w-4 h-4 rounded-full ${color} mr-2`}></div>
+
             <div className="flex-1 relative h-8 rounded-md overflow-hidden bg-gray-300">
                 <div
                     className={`absolute left-0 top-0 h-full ${color}`}
@@ -23,8 +23,8 @@ const StatesCard = ({ indicator, title, color }: StatestProps) => {
                     {indicator}/100
                 </span>
             </div>
-            <div className="flex-1 text-center">
-                <span>{title}</span>
+            <div className="ml-3.5">
+                {lucideImg}
             </div>
         </div>
     );
