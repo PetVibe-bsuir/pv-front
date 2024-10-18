@@ -11,7 +11,7 @@ const StatesCard = ({ indicator, color, lucideImg }: StatestProps) => {
         <div className="flex justify-between items-center rounded-lg p-4 w-full">
             <div className={`w-4 h-4 rounded-full ${color} mr-2`}></div>
 
-            <div className="flex-1 relative h-8 rounded-md overflow-hidden bg-gray-300">
+            <div className="flex-1 relative h-8 rounded-md min-w-64 overflow-hidden bg-gray-300">
                 <div
                     className={`absolute left-0 top-0 h-full ${color}`}
                     style={{ width: `${clampedIndicator}%` }}
