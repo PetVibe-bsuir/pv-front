@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { StatsPage } from "@/pages";
+import { HomePage } from "@/pages";
 import Layout from "@/layouts/Layout.tsx";
 import { routes } from "./navigation/routes";
 
@@ -11,7 +11,7 @@ function Router() {
                     {routes.map((route) => (
                         <Route key={route.path} {...route} />
                     ))}
-                    <Route path="*" element={<StatsPage />} />
+                    <Route path="*" element={<HomePage />} />
                 </Route>
             </Routes>
         </BrowserRouter>
