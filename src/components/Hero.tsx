@@ -14,6 +14,7 @@ const Hero = () => {
             ></img>
         </div>
     );
+    
 };
 
 export default Hero;
