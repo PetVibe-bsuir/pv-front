@@ -1,5 +1,5 @@
 const Page = () => {
-    return <div></div>;
+    return <div>Game</div>;
 };
 
 export default Page;

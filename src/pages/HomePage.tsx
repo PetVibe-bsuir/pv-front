@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Page = () => {
     return (
-        <>
+        <div className="flex flex-1 flex-col">
             <States />
             <div className="flex w-full flex-1 items-center justify-center">
                 <div className="flex flex-col">
@@ -19,7 +19,7 @@ const Page = () => {
                     </Link>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
