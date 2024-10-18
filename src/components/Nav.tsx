@@ -7,15 +7,15 @@ type Props = {
 };
 const Nav: FC<Props> = () => {
     return (
-        <div className="fixed bottom-0 z-20 flex h-14 w-full justify-between rounded-t-2xl bg-neutral-700 p-3 px-5">
+        <div className="">
             <Link to="/">
-                <BadgeDollarSign className="h-full" />
+                <BadgeDollarSign className="" />
             </Link>
             <Link to="/user">
-                <CircleUser className="h-full" />
+                <CircleUser className="" />
             </Link>
             <Link to="/ref">
-                <TicketSlashIcon className="h-full" />
+                <TicketSlashIcon className="" />
             </Link>
         </div>
     );
