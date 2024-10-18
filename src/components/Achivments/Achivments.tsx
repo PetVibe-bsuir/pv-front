@@ -1,9 +1,9 @@
-import AchivmentsList from "./AchivmentsList.tsx"
+import AchievementsList from "./AchievementsList.tsx"
 
 const Page = () => {
     return (
         <div>
-            <AchivmentsList />
+            <AchievementsList />
         </div>
     )
 }

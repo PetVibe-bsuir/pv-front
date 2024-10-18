@@ -9,7 +9,7 @@ const cardData: TAchivment[] = [
     {icon: '../../se', exp: 10000, name: 'Genius'},
 ]
 
-const AchivmentsList = () => {
+const AchievementsList = () => {
     return (
         <div className="flex items-center justify-between w-full gap-1.5">
             {cardData.map(card => (
@@ -19,4 +19,4 @@ const AchivmentsList = () => {
     );
 };
 
-export default AchivmentsList;
+export default AchievementsList;
