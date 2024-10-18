@@ -1,9 +1,9 @@
-import States from "@/components/ui/states";
+import Stats from "@/components/ui/states";
 
 const Page = () => {
     return (
         <>
-            <States />
+            <Stats />
             <div className="flex w-full flex-1 items-center justify-center">
                 <div className="flex flex-col">
                     <img

@@ -1,10 +1,3 @@
-import { FC } from "react";
-
-// type HeroProps {
-
-// }
-
-// const Hero:FC<HeroProps> = () => {
 const Hero = () => {
     return (
         <div className="flex flex-1 items-center justify-between">
@@ -14,7 +7,6 @@ const Hero = () => {
             ></img>
         </div>
     );
-    
 };
 
 export default Hero;
