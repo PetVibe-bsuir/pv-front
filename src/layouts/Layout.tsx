@@ -1,15 +1,19 @@
-import { type FC, ReactNode } from "react";
+import Nav from "@/components/Nav";
+import { type FC, useMemo } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 
-type Props = {
-    nav: ReactNode;
-    children: ReactNode;
-};
+const Layout: FC = () => {
+    const location = useLocation();
 
-const Layout: FC<Props> = (props) => {
+    const nav = useMemo(() => <Nav location={location.pathname} />, [location.pathname]);
+
     return (
-        <div className="min-h-screen bg-black pb-16 text-white">
-            {props.children}
-            {props.nav}
+        <div className="flex min-h-screen flex-col bg-black text-white">
+            <div className="flex flex-1">
+                {/* {props.children} */}
+                <Outlet />
+            </div>
+            {nav}
         </div>
     );
 };
