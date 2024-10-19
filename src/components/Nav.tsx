@@ -8,7 +8,7 @@ type Props = {
 
 const Nav: FC<Props> = () => {
     return (
-        <div className="m-2 flex h-16 items-center justify-between rounded-lg border-2 border-neutral-400 bg-neutral-800 px-4">
+        <div className="z-50 m-2 flex h-16 items-center justify-between rounded-lg border-2 border-neutral-400 bg-neutral-800 px-4">
             <Link to="/games">
                 <Gamepad2Icon className="text-white" />
             </Link>
