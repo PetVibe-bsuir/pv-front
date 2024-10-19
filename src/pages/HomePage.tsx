@@ -6,7 +6,7 @@ const Page = () => {
         <div className="flex flex-1 flex-col">
             <States />
             <div className="flex w-full flex-1 items-center justify-center">
-                <div className="flex flex-col">
+                <div className="absolute right-1/2 top-1/2 flex flex-col">
                     <img
                         className="h-[50vw] w-[50vw]"
                         src="https://utfs.io/f/bkysktwhKky7zZkMcMoyOVoQAJU8haN1zf03sc2ukPFIK9xL"
