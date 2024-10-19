@@ -9,3 +9,10 @@ export const ErrorResponseSchema = r.object({
     detail: r.string(),
 })
 export type TErrorResponse = r.infer<typeof ErrorResponseSchema>;
+
+export const AchivmentSchema = r.object({
+    name: r.string(),
+    exp: r.number(),
+    icon: r.string(),
+})
+export type TAchivment = r.infer<typeof AchivmentSchema>;
