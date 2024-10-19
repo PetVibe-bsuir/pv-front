@@ -9,7 +9,7 @@ type Props = {
 const Levels:FC<Props> = () => {
 
     const [isModalOpen, setModalOpen] = useState(false);
-    const currentLevel = 58;
+    const currentLevel = 52;
     const currentExperience = 76; // Текущий опыт
     const totalExperience = 100; // Общий опыт для следующего уровня
 
@@ -25,7 +25,7 @@ const Levels:FC<Props> = () => {
             {isModalOpen && (
                 <LevelModal onClose={() => setModalOpen(false)} currentLevel={currentLevel} />
             )}
-            
+
         </div>
     );
 }
