@@ -1,5 +1,5 @@
 import type { ComponentType, JSX } from "react";
-import { StatsPage } from "@/pages";
+import { EventPage, GamesPage, HomePage, SkinsPage } from "@/pages";
 
 interface Route {
     path: string;
@@ -8,12 +8,9 @@ interface Route {
     icon?: JSX.Element;
 }
 
-function Page() {
-    return "2";
-}
-
 export const routes: Route[] = [
-    { path: "/", Component: StatsPage },
-    { path: "/ref", Component: Page, title: "Init Data" },
-    { path: "/user", Component: StatsPage, title: "Theme Params" },
+    { path: "/", Component: HomePage, title: "Home" },
+    { path: "/games", Component: GamesPage, title: "Games" },
+    { path: "/event", Component: EventPage, title: "Events" },
+    { path: "/skins", Component: SkinsPage, title: "Skins" },
 ];
